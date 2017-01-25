@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/firas/Dropbox/Python/Flask/venv"
+set -gx VIRTUAL_ENV "/home/firas/Seafile/Python/flask_weather/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
