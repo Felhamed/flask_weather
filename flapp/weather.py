@@ -7,4 +7,8 @@ URL_SLUG = "weather"
 app.route("/", methods=["POST"])
 def home():
 	return render_template('weather.html')
-	return "hi there ladies"
+
+app.route("/apicalls", methods=["POST"])
+def getdata():
+	print(request.form['city'])
+	print(request.form['country'])

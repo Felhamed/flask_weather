@@ -2,20 +2,25 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	
+	{% if title %}
+	<title>Simple {{ title }} Flask App</title>
+	{% else %}
+	<title>Simple Flask App</title>
+	{% endif %}
 
-  <title>Simple Flask Weather App</title>
-  <meta name="description" content="Simple Flask Weather App">
-  <meta name="author" content="Firas El-Hamed">
+	<meta name="description" content="Simple Flask Weather App">
+	<meta name="author" content="Firas El-Hamed">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
 
 	<h1>Weather API App</h1>
-		<form action="" method="post">
+		<form action="apicalls" method="post">
 		<label for="city">City:</label>
 		<input type="text" name="city" id="city" placeholder="Enter city" />
 		<label for="country">Country:</label>
